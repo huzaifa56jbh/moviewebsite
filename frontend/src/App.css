@@ -1,0 +1,77 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.main{
+  background-color: #121212;
+}
+.gain{
+  background-color: #3a3a3a;
+}
+.pagination-button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+.pagination-button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.pagination-button:hover {
+  background-color: #0056b3;
+  color: white;
+  border-color: #0056b3;
+}
+/* Add animation for movie items */
+.movie-item {
+  animation: slideIn 0.5s ease;
+}
+.nav-menu {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.nav-menu.open {
+  display: flex;
+  opacity: 1;
+}
+
+/* Add animation for movie items on mobile */
+@media (max-width: 768px) {
+  .movie-item {
+      animation: slideIn 0.5s ease;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Header.css *//* Add this CSS code in your stylesheet */
+
+/* Add this CSS code in your stylesheet */
+/* Add this CSS code in your stylesheet */
+
+.transition-ul {
+  transition: max-height 0.3s ease-in-out;
+ 
+  /* max-height: 0; */
+}
+
+.transition-ul.show {
+  max-height: 500px; /* Adjust this value as needed */
+}
